@@ -1,0 +1,18 @@
+package de.dps.embeddedkafkatest.controller;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@Slf4j
+public class DefaultController {
+
+    @RequestMapping("/version")
+    public String version() {
+        String message = "v1.0";
+        log.info("version: {}", message);
+        return message;
+    }
+
+}
