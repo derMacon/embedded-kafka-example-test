@@ -13,7 +13,6 @@ import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.*;
 
-//@RunWith(SpringRunner.class)
 @RunWith( SpringRunner.class )
 @SpringBootTest
 @DirtiesContext
@@ -30,7 +29,7 @@ public class ReceiverTest {
     private Sender sender;
 
 
-    @org.junit.Test
+    @Test
     public void test() {
         assertTrue(true);
     }
